@@ -84,4 +84,6 @@ const generateMinesweeperGrid = size => {
   return grid.map(row => ("||`" + row.join("`||||`") + "`||")).join("\n")
 }
 
+// Size 10 and more is not displayed on Discord
+// probably because it has limit for spoiler tags in a message
 console.log(generateMinesweeperGrid(9))
